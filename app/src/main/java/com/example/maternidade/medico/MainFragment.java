@@ -51,7 +51,7 @@ public class MainFragment extends Fragment {
                     com.example.maternidade.medico.AdicionarFragment()).commit();
         }
         Button btnAdicionar = v.findViewById(R.id.buttonAdicionar);
-        btnListar.setOnClickListener(new View.OnClickListener() {
+        btnAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameMedico, new
