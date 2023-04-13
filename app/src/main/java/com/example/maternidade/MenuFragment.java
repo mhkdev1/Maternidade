@@ -52,7 +52,8 @@ public class MenuFragment extends Fragment {
                         com.example.maternidade.medico.MainFragment()).commit();
                 break;
             case R.id.menu_bebe:
-                Toast.makeText(getActivity(), "Bebê", Toast.LENGTH_LONG).show();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frameMain, new
+                        com.example.maternidade.bebe.MainFragment()).commit();
                 break;
 
 
