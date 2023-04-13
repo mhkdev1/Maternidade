@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Maternidade</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mae">Mãe</string>
+    <string name="medico">Médico</string>
+    <string name="bebe">Bebê</string>
+    <string name="gerenciar_maes">Gerenciar Mães</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="listar">Listar</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="cep">CEP</string>
+    <string name="nome">Nome</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="numero">Numero</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="fixo">Fixo</string>
+    <string name="celular">Celular</string>
+    <string name="comercial">Comercial</string>
+    <string name="data_nascimento">Data Nascimento</string>
+    <string name="especialidade">Especialidade</string>
+    <string name="editar">Editar</string>
+    <string name="gerenciar_medicos">Gerenciar Medicos</string>
+</resources>
