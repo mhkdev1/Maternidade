@@ -23,4 +23,6 @@
     <string name="especialidade">Especialidade</string>
     <string name="editar">Editar</string>
     <string name="gerenciar_medicos">Gerenciar Medicos</string>
+    <string name="gerenciar_bebes">Gerenciar Bebês</string>
+    <string name="peso">Peso</string>
 </resources>

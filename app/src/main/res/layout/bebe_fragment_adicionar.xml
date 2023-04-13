@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="20dp"
-    tools:context=".medico.MainFragment">
+    android:layout_height="wrap_content"
+    tools:context=".bebe.AdicionarFragment">
     <TextView
         android:id="@+id/textViewAdicionar"
         android:layout_width="wrap_content"
@@ -14,28 +13,44 @@
         android:text="@string/adicionar"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewCep"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMae"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/textViewCep"
+        android:id="@+id/textViewMae"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/especialidade"
-        app:layout_constraintBottom_toTopOf="@+id/editTextCep"
+        android:text="@string/mae"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerMae"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAdicionar" />
-    <EditText
-        android:id="@+id/editTextCep"
+    <Spinner
+        android:id="@+id/spinnerMae"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMae" />
+    <TextView
+        android:id="@+id/textViewMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/medico"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerMedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMae" />
+    <Spinner
+        android:id="@+id/spinnerMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/textViewNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCep" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMae" />
     <TextView
         android:id="@+id/textViewNome"
         android:layout_width="match_parent"
@@ -44,33 +59,50 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCep" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMedico" />
     <EditText
         android:id="@+id/editTextNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textViewCelular"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDataNascimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
     <TextView
-        android:id="@+id/textViewCelular"
+        android:id="@+id/textViewDataNascimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/celular"
-        app:layout_constraintBottom_toTopOf="@+id/editTextCelular"
+        android:text="@string/data_nascimento"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDataNascimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
     <EditText
-        android:id="@+id/editTextCelular"
+        android:id="@+id/editTextDataNascimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCelular" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDataNascimento" />
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/peso"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDataNascimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeso" />
 
     <Button
         android:id="@+id/buttonAdicionar"
@@ -80,6 +112,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCelular" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
